@@ -5,3 +5,8 @@ let settings = {
   "method": "GET",
   "headers": {}
 }
+
+const btc = document.querySelector("#bitcoin");
+const eth = document.querySelector("#ethereum");
+const doge = document.querySelector("#dogecoin");
+
