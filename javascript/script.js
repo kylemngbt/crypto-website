@@ -10,3 +10,8 @@ const btc = document.querySelector("#bitcoin");
 const eth = document.querySelector("#ethereum");
 const doge = document.querySelector("#dogecoin");
 
+$.ajax(settings).done(function (response) {
+  btc.textContent = response.bitcoin.usd;
+  eth.textContent = response.ethereum.usd;
+  doge.textContent = response.dogecoin.usd;
+})
